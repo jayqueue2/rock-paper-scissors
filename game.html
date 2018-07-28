@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <script>
+
+var counterPl=0;
+var counterPc=0;
+
+function game() {
+  let playerSelection = prompt("What will it be? Rock, Paper, or Scissors?").toUpperCase();
+  let computerSelection = computerPlay();
+  return playRound(playerSelection, computerSelection);
+  
+  function computerPlay() {
+    const options = ["Rock", "Paper", "Scissors"];
+    const choice=Math.floor(Math.random() * 3);
+    return options[choice].toUpperCase();	
+  }
+
+  function playRound() {
+    console.log("You chose " + playerSelection);
+    console.log("The computer chose " + computerSelection)
+    if (playerSelection === computerSelection) {
+       console.log("Tie game. There is no winner.");
+    }
+    else if (playerSelection == "ROCK" && computerSelection == "SCISSORS" || playerSelection == "SCISSORS" && computerSelection == "PAPER" || playerSelection == "PAPER" && computerSelection == "ROCK") {
+      console.log("You won!");
+	    counterPl=counterPl+1;
+    }
+    else {
+      consoler.log("The computer won.");
+	    counterPc=counterPc+1;
+    }
+  }
+}
+
+var i;
+for (i = 0; i <= 4: i++) {
+	playRound()
+	game()
+  
+  </script>
+  </body>
+</html>
