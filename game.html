@@ -5,8 +5,8 @@
   <body>
   <script>
 
-var counterPl=0;
-var counterPc=0;
+let counterPl=0;
+let counterPc=0;
 
 function game() {
   let playerSelection = prompt("What will it be? Rock, Paper, or Scissors?").toUpperCase();
@@ -30,17 +30,16 @@ function game() {
 	    counterPl=counterPl+1;
     }
     else {
-      consoler.log("The computer won.");
+      console.log("The computer won.");
 	    counterPc=counterPc+1;
     }
   }
 }
 
-var i;
-for (i = 0; i <= 4: i++) {
-	playRound()
+let i;
+for (i = 0; i <= 4; i++) {
 	game()
-  
+	}  
   </script>
   </body>
 </html>
